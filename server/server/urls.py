@@ -22,6 +22,7 @@ import planner.views
 
 router = routers.DefaultRouter()
 router.register(r'users', planner.views.UserViewSet)
+router.register(r'parties', planner.views.PartyViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
