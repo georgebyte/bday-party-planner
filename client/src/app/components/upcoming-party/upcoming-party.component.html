@@ -1,0 +1,23 @@
+<div class="bpp-upcoming-party">
+  <div class="bpp-upcoming-party__container" *ngIf="party">
+    <h2>Upcoming birthday party</h2>
+    <div class="bpp-upcoming-party__info">
+      <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-date">Date: {{party.date}}</div>
+      <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-role">
+        <div class="bpp-upcoming-party__role-name">
+          Your role: {{userRole.name}}
+        </div>
+        <div class="bpp-upcoming-party__role-description">
+          {{userRole.description}}
+        </div>
+        <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-people">
+          <div class="bpp-upcoming-party__organizers">
+            <!-- TODO: output party.organizers -->
+          </div>
+          <div class="bpp-upcoming-party__gift-buyers">
+            <!-- TODO: output party.giftBuyers -->
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

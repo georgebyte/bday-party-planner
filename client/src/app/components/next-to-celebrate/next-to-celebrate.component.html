@@ -1,0 +1,9 @@
+<div class="bpp-next-to-celebrate" *ngIf="people">
+  <h2 class="bpp-next-to-celebrate__title">Birthdays</h2>
+  <div class="bpp-next-to-celebrate__people">
+    <div *ngFor="let person of people" class="bpp-next-to-celebrate__person">
+      <span class="bpp-next-to-celebrate__person-name">{{person.name}}</span>
+      <span class="bpp-next-to-celebrate__person-birthday">{{person.birthday}}</span>
+    </div>
+  </div>
+</div>

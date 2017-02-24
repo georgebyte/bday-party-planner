@@ -4,6 +4,9 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { FooterComponent } from './footer/footer.component';
+import { UpcomingPartyComponent } from './upcoming-party/upcoming-party.component';
+import { NextToCelebrateComponent } from './next-to-celebrate/next-to-celebrate.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
   imports: [
@@ -13,12 +16,18 @@ import { FooterComponent } from './footer/footer.component';
   exports: [
     HeaderComponent,
     MainNavigationComponent,
-    FooterComponent
+    FooterComponent,
+    UpcomingPartyComponent,
+    NextToCelebrateComponent,
+    UsersListComponent
   ],
   declarations: [
     HeaderComponent,
     MainNavigationComponent,
-    FooterComponent
+    FooterComponent,
+    UpcomingPartyComponent,
+    NextToCelebrateComponent,
+    UsersListComponent
    ],
 })
 export class ComponentsModule { }

@@ -1,0 +1,9 @@
+<div class="bpp-users-list" *ngIf="users">
+  <h2 class="bpp-users-list__title">Users</h2>
+  <div class="bpp-users-list__container">
+    <div *ngFor="let user of users" class="bpp-users-list__user">
+      <span class="bpp-users-list__user-name">{{user.name}}</span>
+      <span class="bpp-users-list__user-birthday">{{user.birthday}}</span>
+    </div>
+  </div>
+</div>

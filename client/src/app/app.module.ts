@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ViewsModule } from './views/views.module';
 import { ComponentsModule } from './components/components.module';
+import { UsersModule } from './users/users.module';
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +20,8 @@ import { AppComponent } from './app.component';
     HttpModule,
     AppRoutingModule,
     ViewsModule,
-    ComponentsModule
+    ComponentsModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

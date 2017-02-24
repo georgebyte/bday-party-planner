@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ComponentsModule } from '../components/components.module';
+
 import { DashboardViewComponent } from './dashboard/dashboard-view.component';
 import { UsersViewComponent } from './users/users-view.component';
 import { UserDetailsViewComponent } from './user-details/user-details-view.component';
@@ -10,7 +12,8 @@ import { FundViewComponent } from './fund/fund-view.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ],
   declarations: [
     DashboardViewComponent,
