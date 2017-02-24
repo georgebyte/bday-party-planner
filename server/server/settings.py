@@ -107,3 +107,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 from localsettings import *  # noqa
+
+AUTH_USER_MODEL = 'zemauth.User'

@@ -9,9 +9,13 @@ from . import constants
 class User(AbstractBaseUser):
     birthday = models.DateField()
 
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['birthday']
+
 
 class Party(models.Model):
     date = models.DateField(null=True)
+
     date_from = models.DateField()
     date_to = models.DateField()
 
