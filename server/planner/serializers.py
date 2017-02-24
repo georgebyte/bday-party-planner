@@ -14,4 +14,4 @@ class PartySerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = models.Party
-        fields = ('id', 'date', 'date_from', 'date_to', 'users')
+        fields = ('id', 'date', 'deadline', 'users')
