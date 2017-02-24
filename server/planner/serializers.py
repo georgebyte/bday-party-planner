@@ -7,11 +7,11 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = models.User
-        fields = ('id', 'url', 'email', 'birthday')
+        fields = ('id', 'email', 'birthday')
 
 
 class PartySerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = models.Party
-        fields = ('id', 'url', 'date', 'date_from', 'date_to', 'users')
+        fields = ('id', 'date', 'date_from', 'date_to', 'users')
