@@ -11,6 +11,11 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = models.User.objects.all()
     serializer_class = serializers.UserSerializer
 
+    def get_serializer_class(self):
+        if self.request.method == 'PUT':
+            return serializers.UserUpdateSerializer
+        return self.serializer_class
+
 
 class PartyViewSet(viewsets.ModelViewSet):
     queryset = models.Party.objects.all().prefetch_related('users', 'userrole_set')

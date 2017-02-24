@@ -8,6 +8,15 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta(object):
         model = models.User
         fields = ('id', 'name', 'email', 'birthday')
+        read_only_fields = ('id',)
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+
+    class Meta(object):
+        model = models.User
+        fields = ('id', 'name', 'email', 'birthday')
+        read_only_fields = ('id', 'email')
 
 
 class UserRoleSerializer(serializers.ModelSerializer):
