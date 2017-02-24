@@ -27,7 +27,7 @@ class GiftIdea(models.Model):
     user = models.ForeignKey('User')
     idea = models.TextField()
 
-    party_used = models.ForeignKey(Party, null=True, blank=True)
+    party = models.ForeignKey(Party, null=True, blank=True)
 
     created_by = models.ForeignKey('User', related_name='+')
     created_dt = models.DateTimeField(auto_now_add=True)
