@@ -1,13 +1,12 @@
-# bday-party-planner
-Birthday Party Planner
+# Birthday Party Planner
 
 This app is intended for small companies that have established social gatherings for their employees. In most of the cases there is too much work to be done when only one person is organizing the party. The main idea of this app is to include all employees and encourage them to contribute their part in the organization. Birthday boys and girls will organize the party, gift buyers will define a list of ideas for the gifts and go buy them and other guests will contribute their ideas for the people who are celebrating. This app helps coordinating everyone involved by sending them reminders and guide them through their tasks.
 
-1. Login
+##1. Login
 
   User logs in with his work email and password.
 
-2. Dashboard
+##2. Dashboard
 
   User can se upcoming birthday party and his role in it. Possible roles are the following:
 
@@ -27,7 +26,7 @@ This app is intended for small companies that have established social gatherings
 
     - Gift wraper: Find nice gift cards and bags or wrapping paper for each of the birthday boys.
  
-3. Parties
+##3. Parties
   
   - Users can see the list of all parties sorted by date.
   
@@ -35,7 +34,7 @@ This app is intended for small companies that have established social gatherings
   
   - Party organizer can send invitation to all other users for the party he is organizing.
   
-4. Users
+##4. Users
   
   - Users can see the list of all users in the system and check detailed view of certain user.
 
@@ -43,10 +42,10 @@ This app is intended for small companies that have established social gatherings
   
   - Ideas collector can choose the winning idea and generate final gift list.
 
-5. Ideas
+##5. Ideas
   
   - User can see ideas for the gifts except for all users in the organization except for himself. He can add new idea for a certain person or vote for the specific ideas.
 
-6. Gift fond
+##6. Gift fond
   
   - Admin can monitor cash flow and insert payments.
