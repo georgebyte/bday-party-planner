@@ -23,3 +23,26 @@ class UserRole(models.Model):
     party = models.ForeignKey(Party)
 
     role = models.PositiveSmallIntegerField(choices=constants.UserRoleType.get_choices())
+
+
+class PresentIdea(models.Model):
+    user = models.ForeignKey(User)
+    idea = models.TextField()
+
+    created_by = models.ForeignKey(User, related_name='+')
+    created_dt = models.DateTimeField(auto_now_add=True)
+
+
+class PresentIdeaComment(models.Model):
+    idea = models.ForeignKey(PresentIdea)
+    comment = models.TextField()
+
+    created_by = models.ForeignKey(User, related_name='+')
+    created_dt = models.DateTimeField(auto_now_add=True)
+
+
+class PresentIdeaUpvote(models.Model):
+    idea = models.ForeignKey(PresentIdea)
+
+    created_by = models.ForeignKey(User, related_name='+')
+    created_dt = models.DateTimeField(auto_now_add=True)
