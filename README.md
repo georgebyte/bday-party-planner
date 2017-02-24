@@ -42,6 +42,8 @@ This app is intended for small companies that have established social gatherings
   
   * Users can see events in the calendar view for the current month and check details of events.
   
+  ![Image of calendar](http://i.imgur.com/pMV3yAN.png)
+  
 ##5. Users
   
   * Users can see the list of all users in the system and check detailed view of certain user.
@@ -49,10 +51,14 @@ This app is intended for small companies that have established social gatherings
   * Admin can add new user. Invitation to the app will be sent to the user.
   
   * Ideas collector can choose the winning idea and generate final gift list.
+  
+  ![Image of calendar](http://i.imgur.com/zcu46e0.png)
 
 ##6. Ideas
   
   * User can see ideas for the gifts except for all users in the organization except for himself. He can add new idea for a certain person or vote for the specific ideas.
+  
+  ![Image of calendar](http://i.imgur.com/pzhb34T.png)
 
 ##7. Gift fond
   
