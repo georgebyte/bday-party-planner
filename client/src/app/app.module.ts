@@ -7,21 +7,21 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ViewsModule } from './views/views.module';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ViewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
