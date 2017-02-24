@@ -8,6 +8,54 @@ from django.db import models
 from . import constants
 
 
+class Party(models.Model):
+    date = models.DateField(null=True)
+
+    date_from = models.DateField()
+    date_to = models.DateField()
+
+    users = models.ManyToManyField('User', through='UserRole')
+
+
+class UserRole(models.Model):
+    user = models.ForeignKey('User')
+    party = models.ForeignKey(Party)
+
+    role = models.PositiveSmallIntegerField(choices=constants.UserRoleType.get_choices())
+
+
+class PresentIdea(models.Model):
+    user = models.ForeignKey('User')
+    idea = models.TextField()
+
+    party_used = models.ForeignKey(Party, null=True, blank=True)
+
+    created_by = models.ForeignKey('User', related_name='+')
+    created_dt = models.DateTimeField(auto_now_add=True)
+
+
+class PresentIdeaComment(models.Model):
+    idea = models.ForeignKey(PresentIdea)
+    comment = models.TextField()
+
+    created_by = models.ForeignKey('User', related_name='+')
+    created_dt = models.DateTimeField(auto_now_add=True)
+
+
+class PresentIdeaUpvote(models.Model):
+    idea = models.ForeignKey(PresentIdea)
+
+    created_by = models.ForeignKey('User', related_name='+')
+    created_dt = models.DateTimeField(auto_now_add=True)
+
+
+class FundContribution(models.Model):
+    user = models.ForeignKey('User')
+    amount = models.IntegerField()
+
+    created_dt = models.DateTimeField(auto_now_add=True)
+
+
 class UserManager(BaseUserManager):
 
     def _create_user(self, email, password, is_staff, is_superuser, **extra_fields):
@@ -53,51 +101,3 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         "Returns the short name for the user."
         return self.email
-
-
-class Party(models.Model):
-    date = models.DateField(null=True)
-
-    date_from = models.DateField()
-    date_to = models.DateField()
-
-    users = models.ManyToManyField(User, through='UserRole')
-
-
-class UserRole(models.Model):
-    user = models.ForeignKey(User)
-    party = models.ForeignKey(Party)
-
-    role = models.PositiveSmallIntegerField(choices=constants.UserRoleType.get_choices())
-
-
-class PresentIdea(models.Model):
-    user = models.ForeignKey(User)
-    idea = models.TextField()
-
-    party_used = models.ForeignKey(Party, null=True, blank=True)
-
-    created_by = models.ForeignKey(User, related_name='+')
-    created_dt = models.DateTimeField(auto_now_add=True)
-
-
-class PresentIdeaComment(models.Model):
-    idea = models.ForeignKey(PresentIdea)
-    comment = models.TextField()
-
-    created_by = models.ForeignKey(User, related_name='+')
-    created_dt = models.DateTimeField(auto_now_add=True)
-
-
-class PresentIdeaUpvote(models.Model):
-    idea = models.ForeignKey(PresentIdea)
-
-    created_by = models.ForeignKey(User, related_name='+')
-    created_dt = models.DateTimeField(auto_now_add=True)
-
-
-class FundContribution(models.Model):
-    user = models.ForeignKey(User)
-    amount = models.IntegerField()
-
-    created_dt = models.DateTimeField(auto_now_add=True)
