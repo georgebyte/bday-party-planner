@@ -38,6 +38,8 @@ This app is intended for small companies that have established social gatherings
   
   * Party organizer can send invitation to all other users for the party he is organizing.
   
+  ![Image of parties](http://i.imgur.com/wM5NXaF.png)
+  
 ##4. Calendar
   
   * Users can see events in the calendar view for the current month and check details of events.
