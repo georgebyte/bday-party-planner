@@ -57,9 +57,6 @@ class FundContribution(models.Model):
 class UserManager(BaseUserManager):
 
     def _create_user(self, email, password, is_staff, is_superuser, **extra_fields):
-        """
-        Creates and saves a User with the given email and password.
-        """
         if not email:
             raise ValueError('Users must have an email address')
         now = timezone.now()
@@ -98,7 +95,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     def get_short_name(self):
-        "Returns the short name for the user."
         return self.name
 
     def get_full_name(self):
