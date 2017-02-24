@@ -106,4 +106,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Custom auth user model
+
+AUTH_USER_MODEL = 'planner.User'
+
 from localsettings import *  # noqa
