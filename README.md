@@ -8,44 +8,44 @@ This app is intended for small companies that have established social gatherings
 
 ##2. Dashboard
 
-User can se upcoming birthday party and his role in it. Possible roles are the following:
+* User can se upcoming birthday party and his role in it. Possible roles are the following:
 
-  - Guest, Party organizer, Ideas collector, Store buyer, Online buyer, Gift wraper
+  * Guest, Party organizer, Ideas collector, Store buyer, Online buyer, Gift wraper
 
-User must contribute to the organization of the party by executing tasks for his role:
+* User must contribute to the organization of the party by executing tasks for his role:
   
-  - Guest: Contribute ideas for the gifts.
+  * Guest: Contribute ideas for the gifts.
 
-  - Party organizer: Collect ideas for the party and send invitation.
+  * Party organizer: Collect ideas for the party and send invitation.
 
-  - Ideas collector: Prepare final list of gifts.
+  * Ideas collector: Prepare final list of gifts.
 
-  - Store buyer: Pick up gifts in local stores.
+  * Store buyer: Pick up gifts in local stores.
 
-  - Online buyer: Buy gifts online.
+  * Online buyer: Buy gifts online.
 
-  - Gift wraper: Find nice gift cards and bags or wrapping paper for each of the birthday boys.
+  * Gift wraper: Find nice gift cards and bags or wrapping paper for each of the birthday boys.
  
 ##3. Parties
   
-  - Users can see the list of all parties sorted by date.
+  * Users can see the list of all parties sorted by date.
   
-  - Admin can add new party and include organizers and gift buyers in the process. An email will be sent to all included in the process.
+  * Admin can add new party and include organizers and gift buyers in the process. An email will be sent to all included in the process.
   
-  - Party organizer can send invitation to all other users for the party he is organizing.
+  * Party organizer can send invitation to all other users for the party he is organizing.
   
 ##4. Users
   
-  - Users can see the list of all users in the system and check detailed view of certain user.
+  * Users can see the list of all users in the system and check detailed view of certain user.
 
-  - Admin can add new user. Invitation to the app will be sent to the user.
+  * Admin can add new user. Invitation to the app will be sent to the user.
   
-  - Ideas collector can choose the winning idea and generate final gift list.
+  * Ideas collector can choose the winning idea and generate final gift list.
 
 ##5. Ideas
   
-  - User can see ideas for the gifts except for all users in the organization except for himself. He can add new idea for a certain person or vote for the specific ideas.
+  * User can see ideas for the gifts except for all users in the organization except for himself. He can add new idea for a certain person or vote for the specific ideas.
 
 ##6. Gift fond
   
-  - Admin can monitor cash flow and insert payments.
+  * Admin can monitor cash flow and insert payments.
