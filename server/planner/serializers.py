@@ -3,14 +3,14 @@ from rest_framework import serializers
 from . import models
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = models.User
         fields = ('id', 'url', 'email', 'birthday')
 
 
-class PartySerializer(serializers.HyperlinkedModelSerializer):
+class PartySerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = models.Party
