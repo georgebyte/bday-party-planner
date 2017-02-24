@@ -8,11 +8,11 @@ This app is intended for small companies that have established social gatherings
 
 ##2. Dashboard
 
-  User can se upcoming birthday party and his role in it. Possible roles are the following:
+User can se upcoming birthday party and his role in it. Possible roles are the following:
 
   - Guest, Party organizer, Ideas collector, Store buyer, Online buyer, Gift wraper
 
-  User must contribute to the organization of the party by executing tasks for his role:
+User must contribute to the organization of the party by executing tasks for his role:
   
   - Guest: Contribute ideas for the gifts.
 
