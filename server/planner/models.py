@@ -10,9 +10,7 @@ from . import constants
 
 class Party(models.Model):
     date = models.DateField(null=True)
-
-    date_from = models.DateField()
-    date_to = models.DateField()
+    deadline = models.DateField()
 
     users = models.ManyToManyField('User', through='UserRole')
 
