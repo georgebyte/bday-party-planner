@@ -1,10 +1,16 @@
-<div class="bpp-app-container">
-  <bpp-header></bpp-header>
-  <div class="bpp-main-section">
+<div class="bpp-app">
+  <aside class="bpp-app__side-panel">
+    <div class="bpp-app__logo-container">
+      <img class="bpp-app__logo" src="./assets/bday-party-planner-logo.png">
+    </div>
     <bpp-main-navigation></bpp-main-navigation>
-    <div class="bpp-main-section__view-container">
+  </aside>
+  <div class="bpp-app__main-panel">
+    <main class="bpp-app__view-container">
       <router-outlet></router-outlet>
+    </main>
+    <div class="bpp-app__footer-container">
+      <bpp-footer></bpp-footer>
     </div>
   </div>
-  <bpp-footer></bpp-footer>
 </div>

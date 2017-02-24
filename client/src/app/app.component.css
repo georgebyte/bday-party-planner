@@ -1,1 +1,47 @@
+.bpp-app {
+  position: relative;
+  height: 100vh;
+}
+
+.bpp-app__side-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  background: #0e1a35;
+}
+
+.bpp-app__logo-container {
+  padding: 20px;
+}
+
+.bpp-app__logo {
+  max-width: 100%;
+}
+
+.bpp-app__main-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 300px;
+}
+
+.bpp-app__view-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 52px;
+  left: 0;
+}
+
+.bpp-app__footer-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 52px;
+  padding: 20px;
+}
 

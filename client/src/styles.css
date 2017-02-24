@@ -1,52 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f8fa;
+  background-color: #f6f7fa;
+  font-family: 'Roboto', sans-serif;
 }
 
-.bpp-app-container {
-  position: relative;
-  height: 100vh;
+.bpp-box {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  bpp-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
 }
 
-.bpp-app-container .bpp-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 80px;
-}
-
-.bpp-main-section {
-  position: absolute;
-  top: 80px;
-  right: 0;
-  left: 0;
-  bottom: 60px;
-}
-
-.bpp-main-section .bpp-main-navigation {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 300px;
-}
-
-.bpp-main-section__view-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 300px;
-}
-
-.bpp-app-container .bpp-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 60px;
+.bpp-box__title {
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  font-weight: 600;
 }

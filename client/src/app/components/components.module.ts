@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { UpcomingPartyComponent } from './upcoming-party/upcoming-party.component';
@@ -14,7 +13,6 @@ import { UsersListComponent } from './users-list/users-list.component';
     RouterModule
   ],
   exports: [
-    HeaderComponent,
     MainNavigationComponent,
     FooterComponent,
     UpcomingPartyComponent,
@@ -22,7 +20,6 @@ import { UsersListComponent } from './users-list/users-list.component';
     UsersListComponent
   ],
   declarations: [
-    HeaderComponent,
     MainNavigationComponent,
     FooterComponent,
     UpcomingPartyComponent,

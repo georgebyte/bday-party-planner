@@ -1,3 +1,6 @@
 .bpp-footer {
-  background: #eff5f9;
+  line-height: 1;
+  color: #aaaaaa;
+  font-size: 0.8em;
+  text-align: right;
 }
