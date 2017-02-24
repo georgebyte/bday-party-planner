@@ -18,8 +18,32 @@ body {
   bpp-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
 }
 
+.bpp-box--no-padding {
+  padding: 0;
+}
+
 .bpp-box__title {
   margin: 0 0 10px 0;
   font-size: 1.3em;
   font-weight: 600;
+}
+
+.bpp-box--no-padding .bpp-box__title {
+  margin: 0;
+  padding: 20px;
+}
+
+.bpp-users-list__row {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.bpp-users-list__cell {
+  display: inline-block;
+  line-height: 60px;
+  padding: 0 20px;
+  border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.bpp-users-list__cell:first-child {
+  border-left: 0;
 }

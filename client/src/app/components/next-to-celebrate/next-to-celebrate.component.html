@@ -1,9 +1,9 @@
-<div class="bpp-next-to-celebrate bpp-box" *ngIf="people">
+<div class="bpp-next-to-celebrate bpp-box bpp-box--no-padding" *ngIf="people">
   <h2 class="bpp-box__title">Birthdays</h2>
-  <div class="bpp-next-to-celebrate__people">
-    <div *ngFor="let person of people" class="bpp-next-to-celebrate__person">
-      <span class="bpp-next-to-celebrate__person-name">{{person.name}}</span>
-      <span class="bpp-next-to-celebrate__person-birthday">{{person.birthday}}</span>
+  <div class="bpp-users-list">
+    <div *ngFor="let person of people" class="bpp-users-list__row">
+      <span class="bpp-next-to-celebrate__name bpp-users-list__cell">{{person.name}}</span>
+      <span class="bpp-next-to-celebrate__birthday bpp-users-list__cell">{{person.birthday}}</span>
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 
 import { Party } from '../../models/party.model';
 import { Role } from '../../models/role.model';
@@ -8,7 +8,7 @@ import { Role } from '../../models/role.model';
   templateUrl: './upcoming-party.component.html',
   styleUrls: ['./upcoming-party.component.css']
 })
-export class UpcomingPartyComponent implements OnInit {
+export class UpcomingPartyComponent implements OnInit, OnChanges {
   private userRole: Role;
 
   @Input()
@@ -17,10 +17,17 @@ export class UpcomingPartyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.userRole = {
-      name: 'Test role',
-      description: 'Chill out!',
+
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['party'] && changes['party']['users']) {
+      this.findAndSetUserRole(changes['party']['users']);
     }
+  }
+
+  findAndSetUserRole(users) {
+    console.log('users', users);
   }
 
 }

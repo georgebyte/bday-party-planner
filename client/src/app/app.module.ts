@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ViewsModule } from './views/views.module';
 import { ComponentsModule } from './components/components.module';
 import { UsersModule } from './users/users.module';
+import { PartyModule } from './party/party.module';
 
 import { AppComponent } from './app.component';
 
@@ -21,7 +22,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     ViewsModule,
     ComponentsModule,
-    UsersModule
+    UsersModule,
+    PartyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

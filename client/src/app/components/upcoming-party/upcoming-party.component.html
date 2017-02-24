@@ -1,21 +1,32 @@
-<div class="bpp-upcoming-party bpp-box">
-  <div class="bpp-upcoming-party__container" *ngIf="party">
+<div class="bpp-upcoming-party bpp-box" *ngIf="party">
+  <div class="bpp-upcoming-party__container">
     <h2 class="bpp-box__title">Upcoming birthday party</h2>
     <div class="bpp-upcoming-party__info">
-      <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-date">Date: {{party.date}}</div>
+      <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-date" *ngIf="party.date">
+        Date: {{party.date}}
+      </div>
+      <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-deadline" *ngIf="!party.date">
+        Party week: {{party.deadline}}
+      </div>
       <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-role">
         <div class="bpp-upcoming-party__role-name">
-          Your role: {{userRole.name}}
+          <!-- Your role: {{userRole.name}} -->
         </div>
         <div class="bpp-upcoming-party__role-description">
-          {{userRole.description}}
+          <!-- {{userRole.description}} -->
         </div>
         <div class="bpp-upcoming-party__info-item bpp-upcoming-party__info-people">
           <div class="bpp-upcoming-party__organizers">
-            <!-- TODO: output party.organizers -->
+            <h3 class="bpp-upcoming-party__info-people-title">Organizers:</h3>
+            <div class="bpp-upcoming-party__organizer" *ngFor="let organizer of party.organizers">
+              {{organizer.name}}
+            </div>
           </div>
           <div class="bpp-upcoming-party__gift-buyers">
-            <!-- TODO: output party.giftBuyers -->
+            <h3 class="bpp-upcoming-party__info-people-title">Gift buyers:</h3>
+            <div class="bpp-upcoming-party__organizer" *ngFor="let buyer of party.gift_buyers">
+              {{buyer.name}} - {{buyer.role.title}}
+            </div>
           </div>
         </div>
     </div>
