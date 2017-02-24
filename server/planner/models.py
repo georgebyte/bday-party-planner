@@ -92,6 +92,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         help_text=_('Designates whether the user can log into this admin '
                     'site.')
     )
+    name = models.CharField(_('name'), max_length=30, blank=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['birthday']
@@ -100,4 +101,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def get_short_name(self):
         "Returns the short name for the user."
-        return self.email
+        return self.name
+
+    def get_full_name(self):
+        return self.name
