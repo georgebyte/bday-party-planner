@@ -25,9 +25,6 @@ SECRET_KEY = '3u(oo3shubscgaa4hi_%(@_gh+x@k#t@a&li^qqo!-$s$r@93_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -70,17 +67,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'server.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
@@ -118,3 +104,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+from localsettings import *  # noqa
