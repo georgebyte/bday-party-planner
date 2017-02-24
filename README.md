@@ -5,8 +5,10 @@ This app is intended for small companies that have established social gatherings
 ##1. Login
 
   User logs in with his work email and password.
+  
+  ![Image of login](http://i.imgur.com/F22AFv1.png)
 
-##2. Dashboard
+##2. Home
 
 * User can se upcoming birthday party and his role in it. Possible roles are the following:
 
@@ -25,6 +27,8 @@ This app is intended for small companies that have established social gatherings
   * Online buyer: Buy gifts online.
 
   * Gift wraper: Find nice gift cards and bags or wrapping paper for each of the birthday boys.
+  
+  ![Image of home](http://i.imgur.com/mylUCYO.png)
  
 ##3. Parties
   
@@ -34,7 +38,11 @@ This app is intended for small companies that have established social gatherings
   
   * Party organizer can send invitation to all other users for the party he is organizing.
   
-##4. Users
+##4. Calendar
+  
+  * Users can see events in the calendar view for the current month and check details of events.
+  
+##5. Users
   
   * Users can see the list of all users in the system and check detailed view of certain user.
 
@@ -42,10 +50,10 @@ This app is intended for small companies that have established social gatherings
   
   * Ideas collector can choose the winning idea and generate final gift list.
 
-##5. Ideas
+##6. Ideas
   
   * User can see ideas for the gifts except for all users in the organization except for himself. He can add new idea for a certain person or vote for the specific ideas.
 
-##6. Gift fond
+##7. Gift fond
   
   * Admin can monitor cash flow and insert payments.
