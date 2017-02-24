@@ -12,3 +12,13 @@ class UserViewSet(viewsets.ModelViewSet):
 class PartyViewSet(viewsets.ModelViewSet):
     queryset = models.Party.objects.all().prefetch_related('users', 'userrole_set')
     serializer_class = serializers.PartySerializer
+
+    @list_route()
+    def latest(self, request):
+        try:
+            party = models.Party.objects.latest('created_dt')
+        except models.Party.DoesNotExist:
+            raise Http404('Party entity does not exist')
+
+        serializer = self.get_serializer(party)
+        return Response(serializer.data)
