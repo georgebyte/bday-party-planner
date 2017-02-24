@@ -1,5 +1,10 @@
-<bpp-header></bpp-header>
-<bpp-main-navigation></bpp-main-navigation>
-<router-outlet></router-outlet>
-<bpp-footer></bpp-footer>
-
+<div class="bpp-app-container">
+  <bpp-header></bpp-header>
+  <div class="bpp-main-section">
+    <bpp-main-navigation></bpp-main-navigation>
+    <div class="bpp-main-section__view-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <bpp-footer></bpp-footer>
+</div>
