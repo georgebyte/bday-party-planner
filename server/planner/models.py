@@ -13,6 +13,7 @@ class Party(models.Model):
     deadline = models.DateField()
 
     users = models.ManyToManyField('User', through='UserRole')
+    created_dt = models.DateTimeField(auto_now_add=True)
 
 
 class UserRole(models.Model):
