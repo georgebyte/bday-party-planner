@@ -48,3 +48,10 @@ class PresentIdeaUpvote(models.Model):
 
     created_by = models.ForeignKey(User, related_name='+')
     created_dt = models.DateTimeField(auto_now_add=True)
+
+
+class FundContribution(models.Model):
+    user = models.ForeignKey(User)
+    amount = models.IntegerField()
+
+    created_dt = models.DateTimeField(auto_now_add=True)
