@@ -23,6 +23,8 @@ import planner.views
 router = routers.DefaultRouter()
 router.register(r'users', planner.views.UserViewSet)
 router.register(r'parties', planner.views.PartyViewSet)
+router.register(r'ideas', planner.views.GiftIdeaViewSet)
+router.register(r'fund', planner.views.FundContributionViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
