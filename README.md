@@ -60,6 +60,6 @@ This app is intended for small companies that have established social gatherings
   
   ![Image of calendar](http://i.imgur.com/pzhb34T.png)
 
-##7. Gift fond
+##7. Gift fund
   
   * Admin can monitor cash flow and insert payments.
