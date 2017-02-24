@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import AbstractBaseUser
 from django.db import models
 
@@ -8,6 +9,7 @@ from . import constants
 
 class User(AbstractBaseUser):
     birthday = models.DateField()
+    email = models.EmailField(_('email address'), max_length=255, unique=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['birthday']

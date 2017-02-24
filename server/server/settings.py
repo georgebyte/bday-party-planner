@@ -106,6 +106,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-from localsettings import *  # noqa
+# Custom auth user model
 
-AUTH_USER_MODEL = 'zemauth.User'
+AUTH_USER_MODEL = 'planner.User'
+
+from localsettings import *  # noqa
