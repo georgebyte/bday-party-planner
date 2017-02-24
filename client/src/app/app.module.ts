@@ -8,6 +8,7 @@ import 'hammerjs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ViewsModule } from './views/views.module';
+import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 
@@ -21,7 +22,8 @@ import { AppComponent } from './app.component';
     HttpModule,
     MaterialModule,
     AppRoutingModule,
-    ViewsModule
+    ViewsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
