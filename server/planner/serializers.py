@@ -65,6 +65,7 @@ class PartySerializer(serializers.ModelSerializer):
 
         return ret
 
+
 class GiftIdeaCommentSerializer(serializers.ModelSerializer):
     created_by = UserSerializer()
 
