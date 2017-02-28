@@ -11,7 +11,9 @@ import { combineReducers } from 'redux';
 import { ViewsModule } from './views/views.module';
 import { ComponentsModule } from './components/components.module';
 import { UsersModule } from './users/users.module';
+
 import { PartyModule } from './party/party.module';
+import { partyReducer } from './party/party.reducer';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,6 +48,7 @@ export class AppModule {
     const rootReducer = composeReducers(
       defaultFormReducer(),
       combineReducers({
+        party: partyReducer,
         router: routerReducer,
       })
     );
