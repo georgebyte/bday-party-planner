@@ -16,7 +16,7 @@ export class PartyService {
     return this.http.get(url)
      .toPromise()
      .then(response => {
-       return response.json() as Party
+       return response.json() as Party;
       })
      .catch(error => {
        console.log('Error:', error);
