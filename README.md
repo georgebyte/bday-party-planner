@@ -2,13 +2,13 @@
 
 This app is intended for small companies that have established social gatherings for their employees. In most of the cases there is too much work to be done when only one person is organizing the party. The main idea of this app is to include all employees and encourage them to contribute their part in the organization. Birthday boys and girls will organize the party, gift buyers will define a list of ideas for the gifts and go buy them and other guests will contribute their ideas for the people who are celebrating. This app helps coordinating everyone involved by sending them reminders and guide them through their tasks.
 
-##1. Login
+## 1. Login
 
   User logs in with his work email and password.
   
   ![Image of login](http://i.imgur.com/F22AFv1.png)
 
-##2. Home
+## 2. Home
 
 * User can se upcoming birthday party and his role in it. Possible roles are the following:
 
@@ -30,7 +30,7 @@ This app is intended for small companies that have established social gatherings
   
   ![Image of home](http://i.imgur.com/mylUCYO.png)
  
-##3. Parties
+## 3. Parties
   
   * Users can see the list of all parties sorted by date.
   
@@ -40,13 +40,13 @@ This app is intended for small companies that have established social gatherings
   
   ![Image of parties](http://i.imgur.com/wM5NXaF.png)
   
-##4. Calendar
+## 4. Calendar
   
   * Users can see events in the calendar view for the current month and check details of events.
   
   ![Image of calendar](http://i.imgur.com/pMV3yAN.png)
   
-##5. Users
+## 5. Users
   
   * Users can see the list of all users in the system and check detailed view of certain user.
 
@@ -56,12 +56,12 @@ This app is intended for small companies that have established social gatherings
   
   ![Image of calendar](http://i.imgur.com/zcu46e0.png)
 
-##6. Ideas
+## 6. Ideas
   
   * User can see ideas for the gifts except for all users in the organization except for himself. He can add new idea for a certain person or vote for the specific ideas.
   
   ![Image of calendar](http://i.imgur.com/pzhb34T.png)
 
-##7. Gift fund
+## 7. Gift fund
   
   * Admin can monitor cash flow and insert payments.
